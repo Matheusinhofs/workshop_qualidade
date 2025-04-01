@@ -1,0 +1,37 @@
+[project]
+name = "workshop-qualidade"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Matheusinhofs",email = "matheusfs117@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "pandas (>=2.2.3,<3.0.0)",
+    "mkdocs (>=1.6.1,<2.0.0)",
+    "mkdocs-mermaid2-plugin (>=1.2.1,<2.0.0)",
+    "mkdocs-material (>=9.6.11,<10.0.0)",
+    "mkdocstrings[python] (>=0.29.1,<0.30.0)",
+    "taskipy (>=1.14.1,<2.0.0)",
+    "black (>=25.1.0,<26.0.0)",
+    "isort (>=6.0.1,<7.0.0)",
+    "pytest (>=8.3.5,<9.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+format = """
+isort .
+black .
+"""
+kill = "kill -9 $(lsof -t -i :8000)"
+test = "pytest -v"
+run = """
+python app/main.py
+"""
+doc = "mkdocs serve"

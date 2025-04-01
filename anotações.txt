@@ -1,0 +1,8 @@
+- Data quality
+    - Qualidade em dados é ter o dado correto e disponível para o usuário dele
+    - Pydantic e pandera usados para qualidade em ETL
+    - Muita gente usa ferramentas no load como great expectations, dbt e soda
+        - Este tipo de processo é muito reativo 
+        - Evita que explodiu um problema na ponta
+        - Mas não sabe as vezes onde foi e qual a validação
+    - 
