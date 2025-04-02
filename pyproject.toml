@@ -21,7 +21,8 @@ dependencies = [
     "sqlalchemy (>=2.0.40,<3.0.0)",
     "python-dotenv (>=1.1.0,<2.0.0)",
     "psycopg2 (>=2.9.10,<3.0.0)",
-    "pandera[io] (>=0.23.1,<0.24.0)"
+    "pandera[io] (>=0.23.1,<0.24.0)",
+    "duckdb (>=1.2.1,<2.0.0)"
 ]
 
 

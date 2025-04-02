@@ -18,5 +18,6 @@
     
     - Processo do projeto:
         Ler DB -> processar DB -> validar o dataframe, transformação, validar a entrada e saida, testes unitarios e load, validando a entrada
-         
-        
+
+    - ChatGPT é interessante para criar testes unitários
+    - Sempre bom testar para verificar se tudo esta funcionando    

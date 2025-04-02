@@ -6,7 +6,8 @@ Esta é a minha documentação
 graph LR
     hello --> world
     world --> again
-    again --> hello
 ```
 
 ola
+
+::: app.schema.ProdutoSchema

@@ -22,12 +22,8 @@ class ProdutoSchema(pa.DataFrameModel):
     quantidade: Series[int] = pa.Field(ge=20, le=200)
     preco: Series[float] = pa.Field(ge=05.0, le=120.0)
     categoria: Series[str]
+    email: Series[str] = pa.Field(regex=email_regex)
     
     class Config:
         coerce = True
         strict = True
-
-class ProdutoSchemaKPI(ProdutoSchema):
-    valor_total_estoque: Series[float] = pa.Field(ge=0)
-    categoria_normalizada: Series[str]
-    disponibilidade: Series[bool]
