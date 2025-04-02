@@ -15,4 +15,8 @@
     - Pydantic e pandera:
         - O python ele roda linha a linha e necessita de testes e validações no script do tipo dos dados
         - O pandera é usado em dataframes
+    
+    - Processo do projeto:
+        Ler DB -> processar DB -> validar o dataframe, transformação, validar a entrada e saida, testes unitarios e load, validando a entrada
+         
         
