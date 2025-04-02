@@ -5,4 +5,14 @@
         - Este tipo de processo é muito reativo 
         - Evita que explodiu um problema na ponta
         - Mas não sabe as vezes onde foi e qual a validação
-    - 
+    - Realizado toda a parte de início de projeto
+        - mkdocs
+        - mkdocstrings
+        - mermaid
+        - CI/CD
+        - tests
+        - definir merge na branch principal
+    - Pydantic e pandera:
+        - O python ele roda linha a linha e necessita de testes e validações no script do tipo dos dados
+        - O pandera é usado em dataframes
+        
